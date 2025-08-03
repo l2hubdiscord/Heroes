@@ -2,6 +2,9 @@ import os
 import discord
 from discord.ext import commands
 
+discord.VoiceClient = None  # Disable voice support
+
+
 intents = discord.Intents.default()
 intents.message_content = True  # Αν θες να απαντάει σε μηνύματα
 
